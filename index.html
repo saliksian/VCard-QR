@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vcard QR Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Vcard QR Generator</h1>
+    <div class="form">
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone">
+      <input type="text" id="address" placeholder="Address">
+      <input type="text" id="company" placeholder="Company">
+      <button onclick="generateQR()">Generate QR</button>
+    </div>
+    <div class="qrcode" id="qrcode"></div>
+    <a href="" download="vcard.png" id="download">Download QR</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
